@@ -35,3 +35,17 @@ payme=[1,"2",3,"4",true];
 
 enum approvalStatus{Approved,Rejected,Pending};
 var caseStatus:approvalStatus=approvalStatus.Pending;
+
+var api:any[]=[1,2,"d",5,true];
+
+function alertme(param1:string):void{
+    // alert(param1);
+    console.log(param1);
+}
+
+alertme("zsrskdjfkjnf kidambi");
+
+
+type mycustomtype=Array<string>;
+let mycustom:mycustomtype=["a","b","lsfdskldfjklj"];
+console.log(mycustom);
