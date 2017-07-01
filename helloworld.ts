@@ -21,3 +21,17 @@ console.log(text1+msg+text2+msg+text3);
 
 var msg1:string =`i am giving ${msg} space `;
 console.log(msg1);
+
+var bvalue:boolean=true;
+console.log(bvalue);
+
+var age:number=33;
+console.log(age);
+
+var myarray:number[]=[1,2,3];
+
+var payme:[number,string,number,string,boolean];
+payme=[1,"2",3,"4",true];
+
+enum approvalStatus{Approved,Rejected,Pending};
+var caseStatus:approvalStatus=approvalStatus.Pending;
