@@ -82,3 +82,15 @@ console.log("new list : ")
 for(let item of mysimplearray){
     console.log(item);
 }
+
+// functions:
+function gradevaluecreator(grade:number): string { 
+if(grade >0 && grade <=40)
+return "fail";
+else if(grade >40 && grade <=70)
+return "average score";
+else
+return "success garde";
+}
+
+console.log(gradevaluecreator(5));
