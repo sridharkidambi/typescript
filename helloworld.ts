@@ -118,3 +118,19 @@ var combinedfullname:(fname:string,lname:string)=>string=function(fname:string,l
 console.log(declarFullname("Sridhar","kidambi declarFullname"));
 console.log(expfullname("Sridhar","kidambi expfullname"));
 console.log(combinedfullname("Sridhar","kidambi combinedfullname"));
+
+// immediately invoked functions
+
+var namearay:string[]=["a","b","sfsdf","sdfnjkfng"];
+var counter:number=0;
+(function(){
+for(let icount in namearay)
+counter++;
+})();
+console.log(counter);
+
+// immediately invoked functions with parameters
+console.log( (function(fname:string,lname:string):string{
+console.log(fname +" log "+ lname);
+return (fname +" return "+ lname);
+})("sridhar","kidambi with parameters"));
