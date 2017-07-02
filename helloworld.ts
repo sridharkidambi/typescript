@@ -84,7 +84,8 @@ for(let item of mysimplearray){
 }
 
 // functions:
-function gradevaluecreator(grade:number): string { 
+// function declarations    
+function gradevaluecreator(grade:number,previosgrade?:number,...subjects:string[]): string { 
 if(grade >0 && grade <=40)
 return "fail";
 else if(grade >40 && grade <=70)
@@ -92,5 +93,28 @@ return "average score";
 else
 return "success garde";
 }
+var myfullname=(fname:string,lname:string) :string =>{
+    return fname+"-"+ lname;
+}
 
 console.log(gradevaluecreator(5));
+console.log(myfullname("sridhar" ,"kidambi"));
+
+//function decclarations
+ function declarFullname(fname:string,lname:string):string{
+     return fname+" "+lname;
+ }
+
+//function expressions
+var expfullname:(fname:string,lname:string)=>string;
+expfullname= function(fname:string,lname:string){
+return fname+" "+lname;
+}
+
+var combinedfullname:(fname:string,lname:string)=>string=function(fname:string,lname:string){
+  return fname+" "+lname;  
+}
+
+console.log(declarFullname("Sridhar","kidambi declarFullname"));
+console.log(expfullname("Sridhar","kidambi expfullname"));
+console.log(combinedfullname("Sridhar","kidambi combinedfullname"));
