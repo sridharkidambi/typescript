@@ -46,6 +46,39 @@ function alertme(param1:string):void{
 alertme("zsrskdjfkjnf kidambi");
 
 
-type mycustomtype=Array<string>;
+type mycustomtype=Array<string|number>;
 let mycustom:mycustomtype=["a","b","lsfdskldfjklj"];
-console.log(mycustom);
+let mycustom_num:mycustomtype=[1,2,3,4,556675,56];
+console.log(mycustom);console.log(mycustom_num);
+
+var unionarrayexample:string[]|string;
+
+unionarrayexample=["q","vnfvsdbf","sdjsdfjj"];
+console.log(unionarrayexample);
+unionarrayexample="Sridhar Kidambi single string";
+console.log(unionarrayexample);
+
+let myconditonname:string ="chEnnai";
+let mynormalname:string ="sridhar";
+if (!(myconditonname=="chennai" || mynormalname=="sridhar")){
+    console.log("i am from chennai");
+}
+else if(myconditonname!="chennai"){
+     console.log("i am not from chennai");
+}
+
+// for in for of
+
+let mysimplearray:number[]=[4,3,2,1,5,6,8];
+
+mysimplearray.forEach(element => {
+    console.log(element.toString());
+});
+
+for(let item in mysimplearray){
+    console.log(item);
+}
+console.log("new list : ")
+for(let item of mysimplearray){
+    console.log(item);
+}
