@@ -145,3 +145,29 @@ var add = (function () {
 console.log(add());
 console.log(add());
 console.log(add());
+
+function closurefunction1(name:number){
+var n:number=name;
+ return (function() {
+    console.log(name++);
+ })
+}
+
+var mynamenumber=closurefunction1(4);
+mynamenumber();
+
+//closure with example
+function lineup(){
+    var ibatting:number=100;
+    return{
+        nextbatter(){ibatting++},
+        currentBatter(){return ibatting;}
+    }
+}
+
+console.log("closure with example");
+var matchstake=lineup();
+console.log(matchstake.currentBatter());
+matchstake.nextbatter();
+console.log(matchstake.currentBatter());
+
