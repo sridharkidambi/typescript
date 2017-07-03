@@ -134,3 +134,14 @@ console.log( (function(fname:string,lname:string):string{
 console.log(fname +" log "+ lname);
 return (fname +" return "+ lname);
 })("sridhar","kidambi with parameters"));
+
+var add = (function () {
+    var counter = 0;
+    return function () {
+        return counter += 1;
+    }
+})();
+
+console.log(add());
+console.log(add());
+console.log(add());
