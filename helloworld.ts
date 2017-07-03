@@ -171,3 +171,8 @@ console.log(matchstake.currentBatter());
 matchstake.nextbatter();
 console.log(matchstake.currentBatter());
 
+var matchstake=lineup();
+console.log(matchstake.currentBatter());
+matchstake.nextbatter();
+console.log(matchstake.currentBatter());
+
