@@ -3,6 +3,7 @@
         "sourceMap": true
     },
     "files": [
-        "helloworld.ts"
+        "helloworld.ts",
+        "tsclassesexamples.ts"
     ]
 }
