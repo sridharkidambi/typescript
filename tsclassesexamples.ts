@@ -117,4 +117,19 @@ myInvoice.printcallLater(1000);
 
 
 
-// 
+// asyncronous methods
+var dbquery=function():void{
+    setTimeout(() =>{
+        console.log("i am doing DB fetch");
+    }, 3000);
+}
+dbquery();
+// higher order function here is loadpage as it is calling onother method in parameter.
+function loadpage(q:()=> void){
+console.log("header");
+q();
+console.log("sidebar");
+console.log("footer");
+}
+
+loadpage(dbquery);

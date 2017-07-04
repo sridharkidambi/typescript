@@ -1,16 +1,18 @@
 {
     "compilerOptions": {
-        "target": "es5",
+        "module": "amd",
+        "target": "es6",
         "sourceMap": true,
         "lib": ["es6", "dom"],
         "types": ["reflect-metadata"],
-        "module": "commonjs",
+        // "module": "commonjs",
         "moduleResolution": "node",
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true
     },
     "files": [
         "helloworld.ts",
-        "tsclassesexamples.ts"
+        "tsclassesexamples.ts",
+        "promisesexample.ts"
     ]
 }
