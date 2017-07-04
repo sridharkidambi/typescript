@@ -84,3 +84,37 @@ export interface Ipost{
 }
 var opost= new posting.post({email:"s.k@gmail.com",name:"pname"});
 opost.printpos();
+
+//aysncronous  THIS. example
+
+class myInvice{
+    item:number=0;
+    constructor(item:number){
+        this.item=item;
+    }
+
+    printtotal(){
+        console.log(this.item);
+    }
+
+// this. in this will throw  error:
+    // printcallLater(time:number){
+    //     setTimeout(function() {
+    //         console.log(this.item);
+    //     }, time);
+    // }
+
+    printcallLater(time:number){
+        setTimeout(()=> {
+            console.log(this);
+        }, time);
+    }
+}
+
+var myInvoice=new myInvice(500);
+myInvoice.printtotal();
+myInvoice.printcallLater(1000);
+
+
+
+// 
