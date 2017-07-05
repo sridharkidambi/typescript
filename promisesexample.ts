@@ -2,9 +2,9 @@
 
 let performupload= function(imagestatus:string): Promise<{imagestatus:string,name:number}>{
 
-return new Promise((resolved)=>{
+return new Promise((resolved,rejected)=>{
     console.log(`Status: ${imagestatus}`)
-    resolved({ imagestatus:"a",name:5} );
+    rejected({ imagestatus:"a",name:5} );
     // setTimeout(() =>{
     //     imagestatus= imagestatus+"success";
     //     resolved({imagestatus:imagestatus});

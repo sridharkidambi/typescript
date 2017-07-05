@@ -1,18 +1,20 @@
 {
     "compilerOptions": {
         "module": "amd",
-        "target": "es6",
+        //"target": "es6", have this for typings promise....
+        "target": "es5",
         "sourceMap": true,
         "lib": ["es6", "dom"],
         "types": ["reflect-metadata"],
         // "module": "commonjs",
         "moduleResolution": "node",
-        "experimentalDecorators": true,
-        "emitDecoratorMetadata": true
+        "experimentalDecorators": true, //for decorators
+        "emitDecoratorMetadata": true //for decorators
     },
     "files": [
         "helloworld.ts",
         "tsclassesexamples.ts",
-        "promisesexample.ts"
+        "promisesexample.ts",
+        "decorators.ts"
     ]
 }
